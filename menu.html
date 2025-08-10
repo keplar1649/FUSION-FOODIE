@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Fusion Foodie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elegant-restaurant.css">
+    <link rel="stylesheet" href="menu-complete.css">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Info Bar -->
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-left">
+                <div class="delivery-partners">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                </div>
+            </div>
+            <div class="info-right">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span>+971 4-8249565</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elegant Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="images/LOGO_FF_page-0001-removebg-preview.png" alt="Fusion Foodie Logo" class="logo">
+                    <h1>Fusion Foodie</h1>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <button class="order-online-btn" id="order-online-btn">
+                    <span class="btn-text">Order Online</span>
+                    <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Appetizing Menu Hero Section -->
+    <section class="menu-hero-simple">
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Delicious Food Spread" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Discover Our Menu</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Indulge in a symphony of flavors crafted with passion and served with love</p>
+                <div class="hero-tagline">
+                    <span class="tagline-text">From traditional favorites to innovative fusion creations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Categories Filter -->
+    <section class="menu-filter-section" data-aos="fade-up">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="dosas">Dosas</button>
+                <button class="filter-btn" data-category="idli">Idli</button>
+                <button class="filter-btn" data-category="indo-chinese">Indo-Chinese</button>
+                <button class="filter-btn" data-category="rice">Rice Bowls</button>
+                <button class="filter-btn" data-category="thali">Thali</button>
+                <button class="filter-btn" data-category="pizza">Pizzas</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="menu-header">
+                <div class="section-label">Our Culinary Journey</div>
+                <h2 class="section-title">Fusion Foodie Menu</h2>
+                <div class="title-divider"></div>
+                <p class="menu-intro">Experience the perfect blend of traditional flavors and modern innovation</p>
+            </div>
+            
+            <div class="menu-categories">
+                <!-- Street Style Fusion Dosas -->
+                <div class="menu-category" data-category="dosas">
+                    <h3 class="category-title">
+                        <span class="floating-icon">🥞</span>
+                        Street Style Fusion Dosas
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Pav+Bhaji" alt="Pav Bhaji Burst Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Pav Bhaji Burst Dosa</h4>
+                                <p class="item-description">Street-style pav bhaji filling in crispy dosa</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Manchurian" alt="Manchurian Magic Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Manchurian Magic Dosa</h4>
+                                <p class="item-description">Indo-Chinese manchurian with dosa perfection</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Paneer" alt="Paneer Chilly Rocket Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Paneer Chilly Rocket Dosa</h4>
+                                <p class="item-description">Spicy paneer chilly in crispy rocket-shaped dosa</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Tandoori" alt="Tandoori Paneer Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Tandoori Paneer Dosa</h4>
+                                <p class="item-description">Smoky tandoori paneer wrapped in golden dosa</p>
+                            </div>
+                            <div class="item-price">₹12</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cheesy & Loaded Dosas -->
+                <div class="menu-category" data-category="dosas">
+                    <h3 class="category-title">
+                        <span class="floating-icon">🧀</span>
+                        Cheesy & Loaded Dosas
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=4-Cheese" alt="4-Cheese Explosion Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">4-Cheese Explosion Dosa</h4>
+                                <p class="item-description">Four premium cheeses melted to perfection</p>
+                            </div>
+                            <div class="item-price">₹15</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Corn+Mayo" alt="Cheese Corn Mayo Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Cheese Corn Mayo Dosa</h4>
+                                <p class="item-description">Creamy cheese, sweet corn, and mayo blend</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Chilli+Garlic" alt="Chilli Cheese Garlic Dosa" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Chilli Cheese Garlic Dosa</h4>
+                                <p class="item-description">Spicy chilli cheese with aromatic garlic</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choice of Idli -->
+                <div class="menu-category" data-category="idli">
+                    <h3 class="category-title">
+                        <span class="floating-icon">🍘</span>
+                        Choice of Idli
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Idli" alt="Classic Idli" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Classic Idli</h4>
+                                <p class="item-description">Soft, fluffy steamed rice cakes</p>
+                            </div>
+                            <div class="item-price">₹5</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Podi" alt="Podi Idli" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Podi Idli</h4>
+                                <p class="item-description">Idli tossed with spicy gun powder</p>
+                            </div>
+                            <div class="item-price">₹8</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Manchu" alt="Idli Manchurian" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Idli Manchurian</h4>
+                                <p class="item-description">Indo-Chinese fusion with soft idli</p>
+                            </div>
+                            <div class="item-price">₹12</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Chilli" alt="Chilli Idli" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Chilli Idli</h4>
+                                <p class="item-description">Spicy stir-fried idli with peppers</p>
+                            </div>
+                            <div class="item-price">₹12</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indo-Chinese Section -->
+                <div class="menu-category" data-category="indo-chinese">
+                    <h3 class="category-title">
+                        <span class="floating-icon">🥢</span>
+                        Street Starter Bites – Indo-Chinese Goodness
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Manchurian" alt="Dry Veg Manchurian" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Dry Veg Manchurian</h4>
+                                <p class="item-description">Crispy vegetable balls in dry manchurian sauce</p>
+                            </div>
+                            <div class="item-price">₹10</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Hakka" alt="Classic Hakka Noodles" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Classic Hakka Noodles</h4>
+                                <p class="item-description">Stir-fried noodles with fresh vegetables</p>
+                            </div>
+                            <div class="item-price">₹10</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Chilli+Paneer" alt="Crispy Chilli Paneer" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Crispy Chilli Paneer</h4>
+                                <p class="item-description">Golden fried paneer in spicy chilli sauce</p>
+                            </div>
+                            <div class="item-price">₹14</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" data-category="beverages">
+                    <h3 class="category-title">
+                        <span class="floating-icon">🥤</span>
+                        Beverages & Refreshers
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Lime+Soda" alt="Fresh Lime Soda" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Fresh Lime Soda</h4>
+                                <p class="item-description">Refreshing lime with sparkling water</p>
+                            </div>
+                            <div class="item-price">₹4</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Coffee" alt="Filter Coffee" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Filter Coffee</h4>
+                                <p class="item-description">South Indian style filter coffee</p>
+                            </div>
+                            <div class="item-price">₹4</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="dish-image">
+                                <img src="https://via.placeholder.com/80x60/f6ddbf/000000?text=Lassi" alt="Lassi (Sweet/Salted)" class="item-image">
+                            </div>
+                            <div class="item-info">
+                                <h4 class="item-name">Lassi (Sweet/Salted)</h4>
+                                <p class="item-description">Traditional yogurt drink</p>
+                            </div>
+                            <div class="item-price">₹6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Footer Note -->
+            <div class="menu-footer-note">
+                <div class="customization-card">
+                    <div class="customization-icon">
+                        <i class="fas fa-chef-hat"></i>
+                    </div>
+                    <div class="customization-content">
+                        <h4>Special Customization Available</h4>
+                        <p>We can customize any dish according to your taste preferences and dietary requirements. Please speak to our chef or contact us for personalized menu options.</p>
+                        <div class="contact-buttons">
+                            <a href="tel:+91-XXXX-XXXX" class="contact-btn">
+                                <i class="fas fa-phone"></i> Call Us
+                            </a>
+                            <a href="mailto:fusion@foodie.com" class="contact-btn">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fusion Foodie</h3>
+                    <p>Where culinary creativity meets exceptional taste</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fusion Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu-page.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile nav toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+
+            <!-- ...existing code... -->
+        <script>
+            // Mobile nav toggle
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('nav-toggle');
+                const navMenu = document.getElementById('nav-menu');
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', function() {
+                        navMenu.classList.toggle('active');
+                    });
+                }
+            });
+        </script>
+        <!-- ...existing code... -->
+</body>
+</html>
