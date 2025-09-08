@@ -205,20 +205,98 @@ body {
 @media (max-width: 1200px) {
     .contact-cards {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .contact-cards {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .contact-card {
+        padding: 25px 15px;
+        margin: 0 10px;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-card p {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Fix map container for mobile */
+    .map-container {
+        grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .map-info-card {
+        margin-top: 20px;
+    }
+    
+    /* Form adjustments */
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+    
+    /* Social reviews section */
+    .social-content {
+        flex-direction: column;
+    }
+    
+    .social-feed, .reviews-section {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .contact-card {
-        padding: 30px 20px;
+        padding: 20px 15px;
+        margin: 0 5px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    /* Fix for mobile viewport */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    .container {
+        padding: 0 15px;
     }
 }
 
@@ -251,6 +329,14 @@ body {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     align-items: start;
+    margin: 0 15px;
+}
+
+/* Ensure map is responsive */
+.map-wrapper iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
 }
 
 .map-wrapper {
