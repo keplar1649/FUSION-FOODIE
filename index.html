@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Foodie - Creative Restaurant Experience</title>
+    
+    <!-- Google Fonts - Schoolbell -->
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elegant-hero.css">
+    <link rel="stylesheet" href="elegant-restaurant.css">
+    <link rel="stylesheet" href="hero-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fusion-menu-cards.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Info Bar -->
+    <div class="info-bar">
+      <div class="container">
+          <div class="info-left">
+              <div class="delivery-partners">
+                  <img src="images/Noon.png" alt="noon foods" class="partner-logo">
+                  <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
+                  <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
+                  <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+              </div>
+          </div>
+          <div class="info-right">
+              <div class="phone-number">
+                  <i class="fas fa-phone"></i>
+                    <span>+971 52 522 4030</span>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Elegant Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="images/LOGO_FF_page-0001-removebg-preview.png" alt="Fusion Foodie Logo" class="logo">
+                    <h1>Fusion Foodie</h1>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Elegant Hero Section with Carousel -->
+    <section id="home" class="hero-section">
+        <div class="hero-carousel-container">
+            <div class="hero-carousel">
+                <div class="hero-slide active">
+                    <div class="hero-image-overlay"></div>
+                    <img src="images/hero image1.jpg" alt="Signature Fusion Dish" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-image-overlay"></div>
+                    <img src="images/hero image 2.jpg" alt="Gourmet Creation" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-image-overlay"></div>
+                    <img src="images/Cheese pizza.jpg" alt="Artisan Pizza" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-image-overlay"></div>
+                    <img src="images/burgers main menu.jpg" alt="Gourmet Burgers" class="hero-bg-image">
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-image-overlay"></div>
+                    <img src="images/Noodles.jpg" alt="Asian Fusion" class="hero-bg-image">
+                </div>
+            </div>
+        </div>
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">FUSION FOODIE</h1>
+                    <div class="hero-divider"></div>
+                    <p class="hero-subtitle">Where Culinary Creativity Meets Exceptional Taste</p>
+                    <p class="hero-description">Experience a journey through flavors from around the world, crafted with passion and served with elegance in the heart of the city.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn-primary">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" style="padding:60px 0;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Story</h2>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="150" style="max-width:900px; margin:10px auto 0; text-align:center;">
+                Born from a love for bold flavors and culinary creativity, Fusion Foodie blends the warmth of Indian street food with global inspirations. We believe in fresh ingredients, handcrafted recipes, and serving smiles in every bite.
+            </p>
+        </div>
+    </section>
+
+    <!-- About the Food We Serve -->
+    <section class="food-serve-section" style="padding:40px 0 20px;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About the Food We Serve</h2>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="150" style="max-width:900px; margin:10px auto 30px; text-align:center;">
+                From loaded fusion dosas and Indo-Chinese stir-fries to wood-fired pizzas and comforting chaats—our menu celebrates diversity with a modern twist.
+            </p>
+            <div class="owl-carousel featured-carousel" data-aos="fade-up" data-aos-delay="250">
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/Pav bhaji burst dosa.png');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Fusion Dosas</h3>
+                        <p class="dish-description">Street-style crunch with global toppings</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/fried rice main menu.jpg');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Indo‑Chinese Bowls</h3>
+                        <p class="dish-description">Wok-tossed flavors with a desi kick</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('images/Cheese pizza.jpg');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Global Pizzas</h3>
+                        <p class="dish-description">Cheesy, baked, and irresistible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Menu - Alternating Animated Cards -->
+    <section id="menu" class="alt-menu-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Menu</h2>
+            <p class="alt-menu-intro" data-aos="fade-up" data-aos-delay="150">Handpicked favorites from each category. Scroll to discover — cards slide in from alternating sides.</p>
+            <div class="alt-cards">
+                <!-- Street Fusion Dosa -->
+                <article class="alt-card" data-animate="left">
+                    <div class="alt-card-image">
+                        <img src="images/Pav bhaji burst dosa.png" alt="Pav Bhaji Burst Dosa">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Street Fusion Dosa</span>
+                        <h3 class="alt-card-title">Pav Bhaji Burst Dosa</h3>
+                        <p class="alt-card-desc">Mumbai’s favorite pav bhaji packed inside a crispy dosa with a cheesy, buttery twist.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">Explore Full Dosa Range</a></div>
+                    </div>
+                </article>
+
+                <!-- Cheesy Dosa (reverse) -->
+                <article class="alt-card reverse" data-animate="right">
+                    <div class="alt-card-image">
+                        <img src="images/Cheese corn mayo dosa.png" alt="Cheese Corn Mayo Dosa">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Cheesy & Loaded</span>
+                        <h3 class="alt-card-title">Cheese Corn Mayo Dosa</h3>
+                        <p class="alt-card-desc">Sweet corn, creamy mayo, and loads of melted cheese — pure indulgence.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">See Cheesy Specials</a></div>
+                    </div>
+                </article>
+
+                <!-- Pizza Fusion Dosa -->
+                <article class="alt-card" data-animate="left">
+                    <div class="alt-card-image">
+                        <img src="images/Paneer tikka pizza dosa.png" alt="Paneer Tikka Pizza Dosa">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Pizza Fusion</span>
+                        <h3 class="alt-card-title">Paneer Tikka Pizza Dosa</h3>
+                        <p class="alt-card-desc">Spicy paneer tikka, cheese, and Italian herbs on a dosa base — east meets west.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">View Pizza Fusions</a></div>
+                    </div>
+                </article>
+
+                <!-- Indo-Chinese (reverse) -->
+                <article class="alt-card reverse" data-animate="right">
+                    <div class="alt-card-image">
+                        <img src="images/Schezwan noodles dosa.png" alt="Schezwan Noodle Dosa">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Indo-Chinese</span>
+                        <h3 class="alt-card-title">Schezwan Noodle Dosa</h3>
+                        <p class="alt-card-desc">Hakka noodles stir-fried with schezwan heat, wrapped in a crunchy dosa.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">Taste Indo-Chinese</a></div>
+                    </div>
+                </article>
+
+                <!-- Global Fusion Pizza -->
+                <article class="alt-card" data-animate="left">
+                    <div class="alt-card-image">
+                        <img src="images/Cheese pizza.jpg" alt="Fusion Foodie Signature Pizza">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Global Pizza</span>
+                        <h3 class="alt-card-title">Fusion Foodie Signature Pizza</h3>
+                        <p class="alt-card-desc">Our chef’s signature — loaded, bold, and baked to perfection.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">Explore Pizzas</a></div>
+                    </div>
+                </article>
+
+                <!-- Street Starters (reverse) -->
+                <article class="alt-card reverse" data-animate="right">
+                    <div class="alt-card-image">
+                        <img src="images/Dry veg manchurian.png" alt="Crispy Chilli Paneer">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Street Starters</span>
+                        <h3 class="alt-card-title">Crispy Chilli Paneer</h3>
+                        <p class="alt-card-desc">Golden-fried paneer tossed with peppers and spicy chilli sauce.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">See Starters</a></div>
+                    </div>
+                </article>
+
+                <!-- Chaat Special -->
+                <article class="alt-card" data-animate="left">
+                    <div class="alt-card-image">
+                        <img src="images/Dahi puri.jpg" alt="Dahi Puri">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Chaat Bar</span>
+                        <h3 class="alt-card-title">Dahi Puri Delight</h3>
+                        <p class="alt-card-desc">Crisp shells filled with yogurt, chutneys, and a burst of flavors.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">Visit Chaat Bar</a></div>
+                    </div>
+                </article>
+
+                <!-- Burgers & Sips (reverse) -->
+                <article class="alt-card reverse" data-animate="right">
+                    <div class="alt-card-image">
+                        <img src="images/burgers main menu.jpg" alt="Veggie Burger">
+                    </div>
+                    <div class="alt-card-content">
+                        <span class="alt-card-tag">Burgers & Sips</span>
+                        <h3 class="alt-card-title">Veggie Burger + Soft Drink</h3>
+                        <p class="alt-card-desc">A hearty veggie burger paired with a chilled soft drink — perfect combo.</p>
+                        <div class="alt-card-cta"><a href="menu.html" class="btn-primary">See Combos</a></div>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align:center; margin-top: 26px;">
+                <a href="menu.html" class="btn-primary" style="display:inline-block; padding:12px 24px; border-radius:40px; background:#fc583e; color:#fff; text-decoration:none; box-shadow:0 6px 20px rgba(252,88,62,0.4);">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Dishes</h2>
+            <div class="owl-carousel featured-carousel" data-aos="fade-up" data-aos-delay="200">
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1630383249896-424e482df921?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Pav Bhaji Burst Dosa</h3>
+                        <p class="dish-description">Mumbai's favorite pav bhaji with a cheesy, buttery twist</p>
+                        <div class="dish-category">Street Style Fusion Dosa</div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Paneer Tikka Pizza Dosa</h3>
+                        <p class="dish-description">Spicy paneer tikka, cheese & Italian herbs</p>
+                        <div class="dish-category">Pizza Fusion Dosa</div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">4-Cheese Explosion Dosa</h3>
+                        <p class="dish-description">A lava of mozzarella, cheddar, Amul & cream cheese</p>
+                        <div class="dish-category">Cheesy & Loaded Dosas</div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Schezwan Noodle Dosa</h3>
+                        <p class="dish-description">Hakka noodles stir-fried with spicy schezwan sauce</p>
+                        <div class="dish-category">Indo-Chinese Specials</div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Crispy Chilli Paneer</h3>
+                        <p class="dish-description">Indo-Chinese style fried paneer tossed in spicy sauce</p>
+                        <div class="dish-category">Street Starter Indo-Chinese</div>
+                    </div>
+                </div>
+                <div class="dish-card chef-special">
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop');"></div>
+                    <div class="dish-content">
+                        <div class="chef-special-badge">Chef's Special</div>
+                        <h3 class="dish-name">Fusion Foodie Signature Pizza</h3>
+                        <p class="dish-description">Featured premium pizza</p>
+                        <div class="dish-category">Global Fusion Pizza</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What Our Customers Say</h2>
+            <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial floating-testimonial">
+                    <div class="testimonial-content">
+                        <p>"An incredible fusion of flavors that takes your taste buds on a journey!"</p>
+                        <div class="testimonial-author">- Sarah M.</div>
+                    </div>
+                </div>
+                <div class="testimonial floating-testimonial">
+                    <div class="testimonial-content">
+                        <p>"The creativity and presentation of each dish is absolutely stunning."</p>
+                        <div class="testimonial-author">- Ahmed K.</div>
+                    </div>
+                </div>
+                <div class="testimonial floating-testimonial">
+                    <div class="testimonial-content">
+                        <p>"Best fusion restaurant in the city. Every visit is a new adventure!"</p>
+                        <div class="testimonial-author">- Maria L.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>
+                            <a href="https://maps.app.goo.gl/GifPZvav2oJnkpbh7" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                                Shop No. 5, Near Al Rajwa Restaurant, Raghuvanshi, Meena Bazar, Bur Dubai, Dubai, UAE
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+971 52 522 4030</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Mon-Sun: 11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fusion Foodie</h3>
+                    <p>Where culinary creativity meets exceptional taste</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fusionfoodie8/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop No. 5, Near Al Rajwa Restaurant, Raghuvanshi, Meena Bazar, Bur Dubai, Dubai, UAE</p>
+                    <p><i class="fas fa-phone"></i> +971 52 522 4030</p>
+                    <p><i class="fas fa-envelope"></i> fusionfoodie2025@gmail.com</p>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fusion Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="elegant-script.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile nav toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+            // Reveal animation for home menu cards (old neon cards)
+            const neonCards = document.querySelectorAll('.fusion-menu-card');
+            if ('IntersectionObserver' in window && neonCards.length) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                neonCards.forEach(c => observer.observe(c));
+            } else {
+                neonCards.forEach(c => c.classList.add('visible'));
+            }
+
+            // Reveal animation for alternating alt-cards (slide from left/right)
+            const altCards = document.querySelectorAll('.alt-card');
+            if ('IntersectionObserver' in window && altCards.length) {
+                const slideObserver = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in-view');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                altCards.forEach(c => slideObserver.observe(c));
+            } else {
+                altCards.forEach(c => c.classList.add('in-view'));
+            }
+        });
+    </script>
+</body>
+</html>

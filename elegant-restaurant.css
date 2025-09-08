@@ -1,0 +1,485 @@
+/* Elegant Restaurant Design - Inspired by High-End Establishments */
+
+/* About Section Styles */
+.about-section {
+    padding: 100px 0;
+    background-color: var(--black);
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1rem;
+    color: var(--atomic-tangerine);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.about-title {
+    font-family: 'Schoolbell', cursive;
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.title-divider {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--atomic-tangerine), var(--portland-orange));
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
+    align-items: start;
+}
+
+.about-text-column {
+    color: var(--dutch-white);
+}
+
+.intro-text {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    color: var(--dutch-white);
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.detail-icon {
+    font-size: 2rem;
+    min-width: 50px;
+}
+
+.detail-content h4 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.3rem;
+    color: var(--atomic-tangerine);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.detail-content p {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--dutch-white);
+}
+
+.about-image-column {
+    position: relative;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.main-image {
+    position: relative;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+}
+
+.secondary-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.small-image {
+    position: relative;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.small-image:hover {
+    transform: scale(1.05);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.main-image:hover .image-overlay,
+.small-image:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    font-family: 'Schoolbell', cursive;
+    color: var(--white);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid rgba(245, 155, 120, 0.2);
+}
+
+.stat-item {
+    color: var(--white);
+}
+
+.stat-number {
+    font-family: 'Schoolbell', cursive;
+    font-size: 3rem;
+    color: var(--atomic-tangerine);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.stat-label {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.1rem;
+    color: var(--dutch-white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Featured Dishes Section - Elegant Redesign */
+.featured-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 50%, var(--black) 100%);
+    position: relative;
+}
+
+.featured-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23f59b78" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23fc583e" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.featured-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.featured-section .section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.featured-section .section-title::before {
+    content: 'Signature Creations';
+    display: block;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1rem;
+    color: var(--atomic-tangerine);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Elegant Dish Cards */
+.dish-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(245, 155, 120, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    margin: 0 15px;
+}
+
+.dish-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 155, 120, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.dish-card:hover::before {
+    opacity: 1;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--atomic-tangerine);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(245, 155, 120, 0.2);
+}
+
+.dish-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.dish-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.dish-content {
+    padding: 30px 25px;
+    text-align: center;
+    position: relative;
+}
+
+.dish-name {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.dish-description {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1rem;
+    color: var(--dutch-white);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.dish-price {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.3rem;
+    color: var(--atomic-tangerine);
+    font-weight: normal;
+    position: relative;
+}
+
+.dish-price::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 1px;
+    background: var(--atomic-tangerine);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Menu Section - Elegant Redesign */
+.menu-section {
+    padding: 100px 0;
+    background-color: var(--black);
+    position: relative;
+}
+
+.menu-section .section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.menu-section .section-title::before {
+    content: 'Culinary Journey';
+    display: block;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1rem;
+    color: var(--atomic-tangerine);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.menu-category {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(245, 155, 120, 0.2);
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+}
+
+.menu-category:hover {
+    border-color: var(--atomic-tangerine);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.category-title {
+    font-family: 'Schoolbell', cursive;
+    font-size: 2rem;
+    color: var(--atomic-tangerine);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(245, 155, 120, 0.1);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.item-name {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.item-description {
+    font-family: 'Schoolbell', cursive;
+    font-size: 0.95rem;
+    color: var(--dutch-white);
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.item-price {
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.1rem;
+    color: var(--atomic-tangerine);
+    font-weight: normal;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .about-title {
+        font-size: 2.5rem;
+    }
+    
+    .intro-text {
+        font-size: 1.2rem;
+    }
+    
+    .menu-categories {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    .about-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .secondary-images {
+        grid-template-columns: 1fr;
+    }
+}

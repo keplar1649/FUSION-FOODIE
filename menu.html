@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Fusion Foodie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elegant-restaurant.css">
+    <link rel="stylesheet" href="menu-complete.css">
+    <link rel="stylesheet" href="fusion-menu-cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Info Bar -->
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-left">
+                <div class="delivery-partners">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                </div>
+            </div>
+            <div class="info-right">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span>+971 52 522 4030</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elegant Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="images/LOGO_FF_page-0001-removebg-preview.png" alt="Fusion Foodie Logo" class="logo">
+                    <h1>Fusion Foodie</h1>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero Section (About-style, no photo) -->
+    <section class="menu-hero-simple">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-elements">
+                <div class="float-element element-1">🍽️</div>
+                <div class="float-element element-2">👨‍🍳</div>
+                <div class="float-element element-3">🌶️</div>
+                <div class="float-element element-4">🥗</div>
+                <div class="float-element element-5">⭐</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Discover Our Menu</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Indulge in a symphony of flavors crafted with passion and served with love</p>
+                <div class="hero-tagline">
+                    <span class="tagline-text">From traditional favorites to innovative fusion creations</span>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Fusion Foodie Dynamic Menu Section -->
+    <section class="fusion-menu-section">
+      <div class="container">
+        <div class="menu-filter-wrap">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-category="all">All Items</button>
+            <button class="filter-btn" data-category="street-fusion-dosas">🥞 Street Style Fusion Dosas</button>
+            <button class="filter-btn" data-category="cheesy-dosas">🧀 Cheesy & Loaded Dosas</button>
+            <button class="filter-btn" data-category="pizza-fusion-dosas">🍕 Pizza Fusion Dosas</button>
+            <button class="filter-btn" data-category="indo-chinese-dosas">🥢 Indo-Chinese Dosas</button>
+            <button class="filter-btn" data-category="classics">🌟 Classics with a Twist</button>
+            <button class="filter-btn" data-category="idli">🍘 Choice of Idli</button>
+            <button class="filter-btn" data-category="street-starters">🥢 Street Starter Bites</button>
+            <button class="filter-btn" data-category="fusion-rice">🍚 Fusion Rice Bowls</button>
+            <button class="filter-btn" data-category="evening-bites">🍢 Starter Evening Bites</button>
+            <button class="filter-btn" data-category="gujarati-thali">🥗 Gujarati Thali</button>
+            <button class="filter-btn" data-category="global-pizza">🍕 Global Fusion Pizzas</button>
+            <button class="filter-btn" data-category="sandwiches">🥪 Toasty Sandwiches</button>
+            <button class="filter-btn" data-category="middle-east">🥙 Middle East x India</button>
+            <button class="filter-btn" data-category="burgers">🍔 Desi Burger Bazaar</button>
+            <button class="filter-btn" data-category="chaat-bar">🍲 Indian Street Chaat Bar</button>
+            <button class="filter-btn" data-category="mumbai-magic">🍛 Mumbai Masala Magic</button>
+            <button class="filter-btn" data-category="dabeli-puffs">🥟 Gujarati Flavors – Dabeli & Puffs</button>
+            <button class="filter-btn" data-category="sides">🍟 Sides</button>
+            <button class="filter-btn" data-category="chaat-specials">🥗 Chaat Specials</button>
+            <button class="filter-btn" data-category="sips-chills">🥤 Sips & Chills</button>
+          </div>
+        </div>
+        <div class="fusion-menu-grid" id="fusion-menu-grid">
+          <!-- Dishes will be rendered here by JS -->
+        </div>
+      </div>
+    </section>
+    <script src="menu-page.js"></script>
+    <script>
+    // All menu data (category, name, image, desc)
+    // Deterministic images from local folder (name -> exact image path)
+    const imageMap = {
+      // Dosas - Street/Classic
+      'Pav Bhaji Burst Dosa': 'images/Pav bhaji burst dosa.png',
+      'Manchurian Magic Dosa': 'images/Manchurian magic dosa.png',
+      'Paneer Chilly Rocket Dosa': 'images/Paneer Chilly rocket dosa.png',
+      'Tandoori Paneer Dosa': 'images/Tandoori Paneer dosa.png',
+      '4-Cheese Explosion Dosa': 'images/Healthy dosa combo.png', // closest available themed image
+      'Cheese Corn Mayo Dosa': 'images/Cheese corn mayo dosa.png',
+      'Chilli Cheese Garlic Dosa': 'images/Chilli cheese garlic dosa.png',
+      'Cheesy Veg Pizza Dosa': 'images/Cheesy veg pizza dosa.png',
+      'Paneer Tikka Pizza Dosa': 'images/Paneer tikka pizza dosa.png',
+      'Mexican Salsa Dosa': 'images/Mexican salsa dosa.jpg',
+      'Schezwan Noodle Dosa': 'images/Schezwan noodles dosa.png',
+      'Triple Schezwan Dosa': 'images/Triple schezwan dosa.png',
+      'Jini Dosa': 'images/Jini dosa.png',
+      'Mushroom Masala Dosa': 'images/Mushroom masala dosa.png',
+      'Masala Uttapam': 'images/Masala uttapam.jpg',
+      'Onion Tomato Uttapam': 'images/Onion tomato uttapam.png',
+      'Ghee Roast with Garlic Podi': 'images/Ghee roast with garlic podi dosa.png',
+      'Butter Masala Dosa': 'images/Butter masala dosa.png',
+      'Onion Rava Dosa': 'images/Onion rava dosa.png',
+      'Benne Dosa': 'images/Benne dosa.png',
+      'Rajni Dosa': 'images/Rajni Dosa.png',
+      'Nutella / Chocolate Dosa': 'images/Healthy dosa combo.png',
+      'Healthy Dosa Combo': 'images/Healthy dosa combo.png',
+      // Idli
+      'Classic Idli': 'images/classic idli.png',
+      'Podi Idli': 'images/Podi idli.png',
+      'Choice of Idli (Ragi, Rava, Millet, Stuffed, Mint)': 'images/Choice of idli healthy varieties.png',
+      'Idli Manchurian': 'images/Idli manchurian.png',
+      'Chilli Idli': 'images/Chilli Idli.png',
+      // Starters / Indo-Chinese
+      'Classic Hakka Noodles': 'images/Classic Hakka noodles.png',
+      'Dry Veg Manchurian': 'images/Dry veg manchurian.png',
+      'Crispy Chilli Paneer': 'images/Dry veg manchurian.png',
+      'Schezwan Fire Noodles': 'images/Noodles.jpg',
+      'Manchurian Mix Noodles': 'images/Noodles.jpg',
+      'Baby Corn Manchurian': 'images/Noodles.jpg',
+      // Fusion Rice
+      'Indo-Chinese Combo Rice': 'images/fried rice main menu.jpg',
+      'Choice of Pulao': 'images/fried rice main menu.jpg',
+      'Mixed Veg Fried Rice': 'images/fried rice main menu.jpg',
+      'Mushroom Fried Rice': 'images/fried rice main menu.jpg',
+      'Manchurian Rice': 'images/fried rice main menu.jpg',
+      'Veg Fried Rice': 'images/fried rice main menu.jpg',
+      'Schezwan Fried Rice': 'images/fried rice main menu.jpg',
+      'Paneer Fried Rice': 'images/fried rice main menu.jpg',
+      // Pizzas / Breads
+      'Premium Margherita': 'images/Cheese pizza.jpg',
+      'Vada Pav Fusion Pizza (4 Vadas)': 'images/Pizza menu main.jpg',
+      'Fusion Foodie Signature Pizza': 'images/Veggie delight pizza.jpg',
+      'Paneer Tikka Treat': 'images/Veggie delight pizza.jpg',
+      'Broccoli / Mushroom Pizza': 'images/Veggie delight pizza.jpg',
+      'Pesto Pizza': 'images/Veggie delight pizza.jpg',
+      'Classic Margherita': 'images/Cheese pizza.jpg',
+      'Corn & Olive Delight': 'images/Veggie delight pizza.jpg',
+      'Garden Veggie Pizza': 'images/Veggie delight pizza.jpg',
+      'Schezwan Paneer': 'images/Veggie delight pizza.jpg',
+      'Garlic Cheese Flatbread': 'images/Pizza menu main.jpg',
+      'Baked Garlic Baguette': 'images/Pizza menu main.jpg',
+      // Sandwiches
+      'Chutney Cheese Bread': 'images/Sandwiches menu main.jpg',
+      'Classic Veg Sandwich': 'images/Sandwiches menu main.jpg',
+      'Mayo Veg Sandwich': 'images/Sandwiches menu main.jpg',
+      'Masala Toast': 'images/Sandwiches menu main.jpg',
+      'Cheese Masala Toast': 'images/Sandwiches menu main.jpg',
+      'Chilli Cheese Crunch Toast': 'images/Sandwiches menu main.jpg',
+      'Grilled Veg & Cheese Sandwich': 'images/Sandwiches menu main.jpg',
+      // Middle East
+      'Spicy Paneer Pide': 'images/Veggie delight pizza.jpg',
+      'Desi Margherita Pide': 'images/Veggie delight pizza.jpg',
+      'Zaatar Cheese Pide': 'images/Veggie delight pizza.jpg',
+      'Veggie Delight Pide': 'images/Veggie delight pizza.jpg',
+      'Schezwan Paneer Pide': 'images/Veggie delight pizza.jpg',
+      // Burgers
+      'Veggie Burger': 'images/burgers main menu.jpg',
+      'Veggie Burger + Fries Combo': 'images/burgers main menu.jpg',
+      'Paneer Tikka Burger': 'images/burgers main menu.jpg',
+      'Paneer Tikka Burger + Fries Combo': 'images/burgers main menu.jpg',
+      // Chaat Bar
+      'Dahi Puri Delight': 'images/Dahi puri.jpg',
+      'Pani Puri': 'images/pani puri main menu.jpg',
+      'Sev Puri': 'images/pani puri main menu.jpg',
+      'Kofta Tikki Chaat': 'images/pani puri main menu.jpg',
+      'Mirchi Vada Chaat': 'images/pani puri main menu.jpg',
+      'Mumbai Bhel': 'images/pani puri main menu.jpg',
+      'Papdi Chaat': 'images/pani puri main menu.jpg',
+      'Chana Papdi': 'images/pani puri main menu.jpg',
+      // Mumbai Magic
+      'Ussal Pav Combo': 'images/pani puri main menu.jpg',
+      'Masala Pav Bites': 'images/pani puri main menu.jpg',
+      'Misal Pav': 'images/pani puri main menu.jpg',
+      'Vada Misal Combo': 'images/pani puri main menu.jpg',
+      'Pav Bhaji': 'images/pani puri main menu.jpg',
+      'Cheese Vada Pav': 'images/pani puri main menu.jpg',
+      'Cheese Schezwan Vada Pav': 'images/pani puri main menu.jpg',
+      'Classic Vada Pav': 'images/pani puri main menu.jpg',
+      'Butter Masala Pav': 'images/pani puri main menu.jpg',
+      'Schezwan Vada Pav': 'images/pani puri main menu.jpg',
+      'Cheese Pav Bhaji Combo': 'images/pani puri main menu.jpg',
+      // Gujarati Flavors – Dabeli & Puffs
+      'Cheese Burst Dabeli': 'images/pani puri main menu.jpg',
+      'Classic Kutchi Dabeli': 'images/pani puri main menu.jpg',
+      'Masala Aloo Puff': 'images/pani puri main menu.jpg',
+      'Cheese Aloo Puff': 'images/pani puri main menu.jpg',
+      'Paneer Tikka Puff': 'images/pani puri main menu.jpg',
+      // Sides
+      'Peri Peri Fries': 'images/Starter main menu.avif',
+      'Loaded Cheese Fries': 'images/Starter main menu.avif',
+      'French Fries': 'images/Starter main menu.avif',
+      // Sips & Chills
+      'Soft Drinks': 'images/Soft Drinks.jpg',
+      'Masala Chaas': 'images/Soft Drinks.jpg',
+      'Masala Chai': 'images/Soft Drinks.jpg',
+      'Mineral Water': 'images/Soft Drinks.jpg',
+      'Mango Lassi': 'images/Soft Drinks.jpg',
+      'Strawberry Lassi': 'images/Soft Drinks.jpg',
+      'Sweet Lassi': 'images/Soft Drinks.jpg'
+    };
+
+    const categoryFallback = {
+      'street-fusion-dosas': 'images/Pav bhaji burst dosa.png',
+      'cheesy-dosas': 'images/Cheese corn mayo dosa.png',
+      'pizza-fusion-dosas': 'images/Cheesy veg pizza dosa.png',
+      'indo-chinese-dosas': 'images/Noodles.jpg',
+      'classics': 'images/Butter masala dosa.png',
+      'idli': 'images/classic idli.png',
+      'street-starters': 'images/Dry veg manchurian.png',
+      'fusion-rice': 'images/fried rice main menu.jpg',
+      'evening-bites': 'images/Starter main menu.avif',
+      'gujarati-thali': 'images/about us demo.jpg',
+      'global-pizza': 'images/Veggie delight pizza.jpg',
+      'sandwiches': 'images/Sandwiches menu main.jpg',
+      'middle-east': 'images/Veggie delight pizza.jpg',
+      'burgers': 'images/burgers main menu.jpg',
+      'chaat-bar': 'images/pani puri main menu.jpg',
+      'mumbai-magic': 'images/pani puri main menu.jpg',
+      'dabeli-puffs': 'images/pani puri main menu.jpg',
+      'sides': 'images/Starter main menu.avif',
+      'chaat-specials': 'images/pani puri main menu.jpg',
+      'sips-chills': 'images/Soft Drinks.jpg'
+    };
+    let fusionMenuData = [
+
+      // Street Style Fusion Dosas
+      {cat:'street-fusion-dosas',name:'Pav Bhaji Burst Dosa',img:'images/Pav Bhaji Burst Dosa.jpg',desc:"Mumbai’s favorite pav bhaji with a cheesy, buttery twist"},
+      {cat:'street-fusion-dosas',name:'Manchurian Magic Dosa',img:'images/Manchurian Magic Dosa.jpg',desc:"Indo-Chinese Manchurian stuffed inside a golden dosa"},
+      {cat:'street-fusion-dosas',name:'Paneer Chilly Rocket Dosa',img:'images/Paneer Chilly Rocket Dosa.jpg',desc:"Fiery paneer chilly sautéed with peppers and tangy sauces"},
+      {cat:'street-fusion-dosas',name:'Tandoori Paneer Dosa',img:'images/Tandoori Paneer Dosa.jpg',desc:"Smoky tandoori paneer with mint mayo and chutney kick"},
+      // Cheesy & Loaded Dosas
+      {cat:'cheesy-dosas',name:'4-Cheese Explosion Dosa',img:'images/4-Cheese Explosion Dosa.jpg',desc:"A lava of mozzarella, cheddar, Amul & cream cheese"},
+      {cat:'cheesy-dosas',name:'Cheese Corn Mayo Dosa',img:'images/Cheese Corn Mayo Dosa.jpg',desc:"Sweet corn and creamy mayo with melted cheese"},
+      {cat:'cheesy-dosas',name:'Chilli Cheese Garlic Dosa',img:'images/Chilli Cheese Garlic Dosa.jpg',desc:"Spicy garlic chutney, green chillies, and gooey cheese"},
+      // Pizza Fusion Dosas
+      {cat:'pizza-fusion-dosas',name:'Cheesy Veg Pizza Dosa',img:'images/Cheesy Veg Pizza Dosa.jpg',desc:"Loaded with mozzarella, capsicum, sweet corn & pizza sauce"},
+      {cat:'pizza-fusion-dosas',name:'Paneer Tikka Pizza Dosa',img:'images/Paneer Tikka Pizza Dosa.jpg',desc:"Spicy paneer tikka, cheese & Italian herbs"},
+      {cat:'pizza-fusion-dosas',name:'Mexican Salsa Dosa',img:'images/Mexican Salsa Dosa.jpg',desc:"A fusion of salsa, jalapeños, beans, corn & nacho cheese"},
+      // Indo-Chinese Dosas
+      {cat:'indo-chinese-dosas',name:'Schezwan Noodle Dosa',img:'images/Schezwan Noodle Dosa.jpg',desc:"Hakka noodles stir-fried with spicy schezwan sauce"},
+      {cat:'indo-chinese-dosas',name:'Triple Schezwan Dosa',img:'images/Triple Schezwan Dosa.jpg',desc:"Indo-Chinese fusion of noodles, fried rice & tangy sauces"},
+      {cat:'indo-chinese-dosas',name:'Jini Dosa',img:'images/Jini Dosa.jpg',desc:"Veggies, schezwan sauce & cheese, chopped and rolled to perfection"},
+      // Classics with a Twist
+      {cat:'classics',name:'Mushroom Masala Dosa',img:'images/Mushroom Masala Dosa.jpg',desc:"Fresh mushrooms sautéed with South Indian spices"},
+      {cat:'classics',name:'Masala Uttapam',img:'images/Masala Uttapam.jpg',desc:"Traditional uttapam with a masala twist"},
+      {cat:'classics',name:'Onion Tomato Uttapam',img:'images/Onion Tomato Uttapam.jpg',desc:"Juicy tomato and onion topping"},
+      {cat:'classics',name:'Ghee Roast with Garlic Podi',img:'images/Ghee Roast with Garlic Podi.jpg',desc:"Crispy dosa with garlic podi"},
+      {cat:'classics',name:'Butter Masala Dosa',img:'images/Butter Masala Dosa.jpg',desc:"Soft dosa layered with butter and masala"},
+      {cat:'classics',name:'Onion Rava Dosa',img:'images/Onion Rava Dosa.jpg',desc:"Golden crispy rava dosa with onion"},
+      {cat:'classics',name:'Mysore Masala Dosa',img:'images/Mysore Masala Dosa.jpg',desc:"Spicy Mysore chutney spread inside dosa"},
+      {cat:'classics',name:'Benne Dosa',img:'images/Benne Dosa.jpg',desc:"Buttery delight dosa"},
+      {cat:'classics',name:'Rajni Dosa',img:'images/Rajni Dosa.jpg',desc:"South Indian masala twist"},
+      {cat:'classics',name:'Nutella / Chocolate Dosa',img:'images/Nutella Dosa.jpg',desc:"Dessert special with rich Nutella"},
+      {cat:'classics',name:'Healthy Dosa Combo',img:'images/Healthy Dosa Combo.jpg',desc:"Beetroot, coriander & mint dosa trio"},
+      // Choice of Idli
+      {cat:'idli',name:'Classic Idli',img:'images/Classic Idli.jpg',desc:"Soft, fluffy rice-lentil cakes with chutneys & sambar"},
+      {cat:'idli',name:'Podi Idli',img:'images/Podi Idli.jpg',desc:"Tossed with ghee and fiery podi"},
+      {cat:'idli',name:'Choice of Idli (Ragi, Rava, Millet, Stuffed, Mint)',img:'images/Choice of Idli.jpg',desc:"Healthy varieties"},
+      {cat:'idli',name:'Idli Manchurian',img:'images/Idli Manchurian.jpg',desc:"Golden-fried idli cubes tossed in spicy Manchurian sauce"},
+      {cat:'idli',name:'Chilli Idli',img:'images/Chilli Idli.jpg',desc:"Crispy fried idli cubes in sizzling chilli sauce"},
+      // Street Starter Bites
+      {cat:'street-starters',name:'Classic Hakka Noodles',img:'images/Classic Hakka Noodles.jpg',desc:"Stir-fried noodles"},
+      {cat:'street-starters',name:'Dry Veg Manchurian',img:'images/Dry Veg Manchurian.jpg',desc:"Golden fried veg balls in dry sauce"},
+      {cat:'street-starters',name:'Crispy Chilli Paneer',img:'images/Crispy Chilli Paneer.jpg',desc:"Paneer tossed in spicy chilli sauce"},
+      {cat:'street-starters',name:'Schezwan Fire Noodles',img:'images/Schezwan Fire Noodles.jpg',desc:"Spicy schezwan-style noodles"},
+      {cat:'street-starters',name:'Manchurian Mix Noodles',img:'images/Manchurian Mix Noodles.jpg',desc:"Manchurian tossed with noodles"},
+      {cat:'street-starters',name:'Baby Corn Manchurian',img:'images/Baby Corn Manchurian.jpg',desc:"Baby corn in spicy Manchurian sauce"},
+      // Fusion Rice Bowls
+      {cat:'fusion-rice',name:'Indo-Chinese Combo Rice',img:'images/Indo-Chinese Combo Rice.jpg',desc:"Fusion of rice & noodles with sauces"},
+      {cat:'fusion-rice',name:'Choice of Pulao',img:'images/Choice of Pulao.jpg',desc:"Navratna, Kashmiri, Paneer"},
+      {cat:'fusion-rice',name:'Mixed Veg Fried Rice',img:'images/Mixed Veg Fried Rice.jpg',desc:""},
+      {cat:'fusion-rice',name:'Mushroom Fried Rice',img:'images/Mushroom Fried Rice.jpg',desc:""},
+      {cat:'fusion-rice',name:'Manchurian Rice',img:'images/Manchurian Rice.jpg',desc:""},
+      {cat:'fusion-rice',name:'Veg Fried Rice',img:'images/Veg Fried Rice.jpg',desc:""},
+      {cat:'fusion-rice',name:'Schezwan Fried Rice',img:'images/Schezwan Fried Rice.jpg',desc:""},
+      {cat:'fusion-rice',name:'Paneer Fried Rice',img:'images/Paneer Fried Rice.jpg',desc:""},
+      // Starter Evening Bites
+      {cat:'evening-bites',name:'Gobi 65',img:'images/Gobi 65.jpg',desc:""},
+      {cat:'evening-bites',name:'Medu Vada',img:'images/Medu Vada.jpg',desc:"Served with chutney & sambar"},
+      {cat:'evening-bites',name:'Street Style Dry Mushroom',img:'images/Street Style Dry Mushroom.jpg',desc:""},
+      // Gujarati Thali
+      {cat:'gujarati-thali',name:'Traditional Gujarati Thali – Full',img:'images/Traditional Gujarati Thali Full.jpg',desc:""},
+      {cat:'gujarati-thali',name:'Traditional Gujarati Thali – Half',img:'images/Traditional Gujarati Thali Half.jpg',desc:""},
+      // Global Fusion Pizzas
+      {cat:'global-pizza',name:'Premium Margherita',img:'images/Premium Margherita.jpg',desc:""},
+      {cat:'global-pizza',name:'Vada Pav Fusion Pizza (4 Vadas)',img:'images/Vada Pav Fusion Pizza.jpg',desc:""},
+      {cat:'global-pizza',name:'Fusion Foodie Signature Pizza',img:'images/Fusion Foodie Signature Pizza.jpg',desc:""},
+      {cat:'global-pizza',name:'Paneer Tikka Treat',img:'images/Paneer Tikka Treat.jpg',desc:""},
+      {cat:'global-pizza',name:'Broccoli / Mushroom Pizza',img:'images/Broccoli Mushroom Pizza.jpg',desc:""},
+      {cat:'global-pizza',name:'Pesto Pizza',img:'images/Pesto Pizza.jpg',desc:""},
+      {cat:'global-pizza',name:'Classic Margherita',img:'images/Classic Margherita.jpg',desc:""},
+      {cat:'global-pizza',name:'Corn & Olive Delight',img:'images/Corn Olive Delight.jpg',desc:""},
+      {cat:'global-pizza',name:'Garden Veggie Pizza',img:'images/Garden Veggie Pizza.jpg',desc:""},
+      {cat:'global-pizza',name:'Schezwan Paneer',img:'images/Schezwan Paneer.jpg',desc:""},
+      {cat:'global-pizza',name:'Garlic Cheese Flatbread',img:'images/Garlic Cheese Flatbread.jpg',desc:""},
+      {cat:'global-pizza',name:'Baked Garlic Baguette',img:'images/Baked Garlic Baguette.jpg',desc:""},
+      // Toasty Sandwiches
+      {cat:'sandwiches',name:'Chutney Cheese Bread',img:'images/Chutney Cheese Bread.jpg',desc:""},
+      {cat:'sandwiches',name:'Classic Veg Sandwich',img:'images/Classic Veg Sandwich.jpg',desc:""},
+      {cat:'sandwiches',name:'Mayo Veg Sandwich',img:'images/Mayo Veg Sandwich.jpg',desc:""},
+      {cat:'sandwiches',name:'Masala Toast',img:'images/Masala Toast.jpg',desc:""},
+      {cat:'sandwiches',name:'Cheese Masala Toast',img:'images/Cheese Masala Toast.jpg',desc:""},
+      {cat:'sandwiches',name:'Chilli Cheese Crunch Toast',img:'images/Chilli Cheese Crunch Toast.jpg',desc:""},
+      {cat:'sandwiches',name:'Grilled Veg & Cheese Sandwich',img:'images/Grilled Veg Cheese Sandwich.jpg',desc:""},
+      // Middle East x India
+      {cat:'middle-east',name:'Spicy Paneer Pide',img:'images/Spicy Paneer Pide.jpg',desc:""},
+      {cat:'middle-east',name:'Desi Margherita Pide',img:'images/Desi Margherita Pide.jpg',desc:""},
+      {cat:'middle-east',name:'Zaatar Cheese Pide',img:'images/Zaatar Cheese Pide.jpg',desc:""},
+      {cat:'middle-east',name:'Veggie Delight Pide',img:'images/Veggie Delight Pide.jpg',desc:""},
+      {cat:'middle-east',name:'Schezwan Paneer Pide',img:'images/Schezwan Paneer Pide.jpg',desc:""},
+      // Desi Burger Bazaar
+      {cat:'burgers',name:'Veggie Burger',img:'images/Veggie Burger.jpg',desc:""},
+      {cat:'burgers',name:'Veggie Burger + Fries Combo',img:'images/Veggie Burger Fries Combo.jpg',desc:""},
+      {cat:'burgers',name:'Paneer Tikka Burger',img:'images/Paneer Tikka Burger.jpg',desc:""},
+      {cat:'burgers',name:'Paneer Tikka Burger + Fries Combo',img:'images/Paneer Tikka Burger Fries Combo.jpg',desc:""},
+      // Indian Street Chaat Bar
+      {cat:'chaat-bar',name:'Dahi Puri Delight',img:'images/Dahi Puri Delight.jpg',desc:""},
+      {cat:'chaat-bar',name:'Pani Puri',img:'images/Pani Puri.jpg',desc:""},
+      {cat:'chaat-bar',name:'Sev Puri',img:'images/Sev Puri.jpg',desc:""},
+      {cat:'chaat-bar',name:'Kofta Tikki Chaat',img:'images/Kofta Tikki Chaat.jpg',desc:""},
+      {cat:'chaat-bar',name:'Mirchi Vada Chaat',img:'images/Mirchi Vada Chaat.jpg',desc:""},
+      {cat:'chaat-bar',name:'Mumbai Bhel',img:'images/Mumbai Bhel.jpg',desc:""},
+      {cat:'chaat-bar',name:'Papdi Chaat',img:'images/Papdi Chaat.jpg',desc:""},
+      {cat:'chaat-bar',name:'Chana Papdi',img:'images/Chana Papdi.jpg',desc:""},
+      // Mumbai Masala Magic
+      {cat:'mumbai-magic',name:'Ussal Pav Combo',img:'images/Ussal Pav Combo.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Masala Pav Bites',img:'images/Masala Pav Bites.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Misal Pav',img:'images/Misal Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Vada Misal Combo',img:'images/Vada Misal Combo.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Pav Bhaji',img:'images/Pav Bhaji.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Cheese Vada Pav',img:'images/Cheese Vada Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Cheese Schezwan Vada Pav',img:'images/Cheese Schezwan Vada Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Classic Vada Pav',img:'images/Classic Vada Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Butter Masala Pav',img:'images/Butter Masala Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Schezwan Vada Pav',img:'images/Schezwan Vada Pav.jpg',desc:""},
+      {cat:'mumbai-magic',name:'Cheese Pav Bhaji Combo',img:'images/Cheese Pav Bhaji Combo.jpg',desc:""},
+      // Gujarati Flavors – Dabeli & Puffs
+      {cat:'dabeli-puffs',name:'Cheese Burst Dabeli',img:'images/Cheese Burst Dabeli.jpg',desc:""},
+      {cat:'dabeli-puffs',name:'Classic Kutchi Dabeli',img:'images/Classic Kutchi Dabeli.jpg',desc:""},
+      {cat:'dabeli-puffs',name:'Masala Aloo Puff',img:'images/Masala Aloo Puff.jpg',desc:""},
+      {cat:'dabeli-puffs',name:'Cheese Aloo Puff',img:'images/Cheese Aloo Puff.jpg',desc:""},
+      {cat:'dabeli-puffs',name:'Paneer Tikka Puff',img:'images/Paneer Tikka Puff.jpg',desc:""},
+      // Sides
+      {cat:'sides',name:'Peri Peri Fries',img:'images/Peri Peri Fries.jpg',desc:""},
+      {cat:'sides',name:'Loaded Cheese Fries',img:'images/Loaded Cheese Fries.jpg',desc:""},
+      {cat:'sides',name:'French Fries',img:'images/French Fries.jpg',desc:""},
+      // Chaat Specials
+      {cat:'chaat-specials',name:'Avocado Papdi Chaat',img:'images/Avocado Papdi Chaat.jpg',desc:""},
+      {cat:'chaat-specials',name:'Dahi Vada',img:'images/Dahi Vada.jpg',desc:""},
+      {cat:'chaat-specials',name:'Masala Puri',img:'images/Masala Puri.jpg',desc:""},
+      {cat:'chaat-specials',name:'Dahi Puri',img:'images/Dahi Puri.jpg',desc:""},
+      {cat:'chaat-specials',name:'Sandwich Papdi Chaat',img:'images/Sandwich Papdi Chaat.jpg',desc:""},
+      {cat:'chaat-specials',name:'Samosa',img:'images/Samosa.jpg',desc:""},
+      {cat:'chaat-specials',name:'Samosa Ragda Chaat',img:'images/Samosa Ragda Chaat.jpg',desc:""},
+      {cat:'chaat-specials',name:'Samosa Chaat',img:'images/Samosa Chaat.jpg',desc:""},
+      // Sips & Chills
+      {cat:'sips-chills',name:'Soft Drinks',img:'images/Soft Drinks.jpg',desc:""},
+      {cat:'sips-chills',name:'Masala Chaas',img:'images/Masala Chaas.jpg',desc:""},
+      {cat:'sips-chills',name:'Masala Chai',img:'images/Masala Chai.jpg',desc:""},
+      {cat:'sips-chills',name:'Mineral Water',img:'images/Mineral Water.jpg',desc:""},
+      {cat:'sips-chills',name:'Mango Lassi',img:'images/Mango Lassi.jpg',desc:""},
+      {cat:'sips-chills',name:'Strawberry Lassi',img:'images/Strawberry Lassi.jpg',desc:""},
+      {cat:'sips-chills',name:'Sweet Lassi',img:'images/Sweet Lassi.jpg',desc:""},
+    ];
+    // Normalize images to local matches or category fallbacks
+    fusionMenuData = fusionMenuData.map(d => ({
+      ...d,
+      img: imageMap[d.name] || d.img || categoryFallback[d.cat] || 'images/about us demo.jpg'
+    }));
+    // Render menu
+    function renderFusionMenu(cat){
+      const grid = document.getElementById('fusion-menu-grid');
+      let filtered = cat==='all' ? fusionMenuData : fusionMenuData.filter(d=>d.cat===cat);
+      function autoDesc(name, cat){
+        const base = {
+          'street-fusion-dosas': 'Street-style fusion dosa bursting with layers of flavor.',
+          'cheesy-dosas': 'Loaded with gooey cheese and irresistible textures.',
+          'pizza-fusion-dosas': 'A creative pizza-inspired dosa with herbs and cheese.',
+          'indo-chinese-dosas': 'Indo-Chinese twist with bold, spicy notes.',
+          'classics': 'A classic prepared with care and authentic spices.',
+          'idli': 'Soft, fluffy and served with chutneys and sambar.',
+          'street-starters': 'Crispy, saucy and perfect to start your meal.',
+          'fusion-rice': 'Wok-tossed rice packed with veggies and flavor.',
+          'evening-bites': 'Snackable bites, great for evenings.',
+          'gujarati-thali': 'Comforting Gujarati flavors in a wholesome thali.',
+          'global-pizza': 'Freshly baked with premium toppings and cheese.',
+          'sandwiches': 'Toasty, cheesy and generously filled.',
+          'middle-east': 'Middle-Eastern inspiration with Indian flair.',
+          'burgers': 'Hearty patty with desi spices in a soft bun.',
+          'chaat-bar': 'Tangy, sweet and spicy chaat medley.',
+          'mumbai-magic': 'Mumbai’s vibrant street flavors in every bite.',
+          'dabeli-puffs': 'Gujarati-inspired flavors wrapped to perfection.',
+          'sides': 'Crispy, shareable sides to complement your meal.',
+          'chaat-specials': 'Chatpata treats layered with chutneys and crunch.',
+          'sips-chills': 'Refreshing sips to cool you down.'
+        };
+        return `${name} — ${base[cat] || 'Delicious and satisfying.'}`;
+      }
+
+      grid.innerHTML = filtered.map(dish=>{
+        const desc = (dish.desc && dish.desc.trim().length) ? dish.desc : autoDesc(dish.name, dish.cat);
+        return `
+        <div class="fusion-menu-card">
+          <img class="fusion-menu-img-full" src="${dish.img}" alt="${dish.name}" onerror="this.src='images/about us demo.jpg'"/>
+          <div class="fusion-menu-overlay">
+            <h4 class="fusion-menu-name">${dish.name}</h4>
+            <p class="fusion-menu-desc">${desc}</p>
+          </div>
+        </div>
+      `;}).join('');
+      // Animate cards on scroll
+      setTimeout(()=>{
+        const cards = document.querySelectorAll('.fusion-menu-card');
+        const observer = new window.IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+        cards.forEach(card => observer.observe(card));
+      }, 100);
+    }
+    document.querySelectorAll('.filter-btn').forEach(btn=>{
+      btn.onclick=function(){
+        document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        renderFusionMenu(btn.dataset.category);
+      };
+    });
+    renderFusionMenu('all');
+    </script>
+    <!-- END Fusion Foodie Dynamic Menu Section -->
+    <!-- Old static menu removed, only dynamic menu is now visible -->
+
+            <!-- Menu Footer Note -->
+            <div class="menu-footer-note">
+                <div class="customization-card">
+                    <div class="customization-icon">
+                        <i class="fas fa-chef-hat"></i>
+                    </div>
+                    <div class="customization-content">
+                        <h4>Special Customization Available</h4>
+                        <p>We can customize any dish according to your taste preferences and dietary requirements. Please speak to our chef or contact us for personalized menu options.</p>
+                        <div class="contact-buttons">
+                            <a href="tel:+971525224030" class="contact-btn">
+                                <i class="fas fa-phone"></i> Call Us
+                            </a>
+                            <a href="mailto:fusionfoodie2025@gmail.com" class="contact-btn">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fusion Foodie</h3>
+                    <p>Where culinary creativity meets exceptional taste</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fusionfoodie8/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop No. 5, Near Al Rajwa Restaurant, Raghuvanshi, Meena Bazar, Bur Dubai, Dubai, UAE</p>
+                    <p><i class="fas fa-phone"></i> +971 52 522 4030</p>
+                    <p><i class="fas fa-envelope"></i> fusionfoodie2025@gmail.com</p>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fusion Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu-page.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile nav toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+
+            <!-- ...existing code... -->
+        <script>
+            // Mobile nav toggle
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('nav-toggle');
+                const navMenu = document.getElementById('nav-menu');
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', function() {
+                        navMenu.classList.toggle('active');
+                    });
+                }
+            });
+        </script>
+        <!-- ...existing code... -->
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fusion Foodie</title>
+    
+    <!-- Google Fonts - Schoolbell -->
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elegant-hero.css">
+    <link rel="stylesheet" href="elegant-restaurant.css">
+    <link rel="stylesheet" href="hero-carousel.css">
+    <link rel="stylesheet" href="menu-complete.css">
+    <link rel="stylesheet" href="contact-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Info Bar -->
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-left">
+                <div class="delivery-partners">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                </div>
+            </div>
+            <div class="info-right">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span>+971 52 522 4030</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Elegant Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="images/LOGO_FF_page-0001-removebg-preview.png" alt="Fusion Foodie Logo" class="logo">
+                    <h1>Fusion Foodie</h1>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section (About-style, no photo) -->
+    <section class="menu-hero-simple">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-elements">
+                <div class="float-element element-1">📍</div>
+                <div class="float-element element-2">☎️</div>
+                <div class="float-element element-3">✉️</div>
+                <div class="float-element element-4">💬</div>
+                <div class="float-element element-5">⭐</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get In Touch</h1>
+                <p class="hero-subtitle">We'd love to hear from you! Share your feedback and connect with us</p>
+                <div class="hero-tagline">
+                    <span class="tagline-text">Your feedback helps us serve you better</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Info -->
+    <section id="quick-contact" class="quick-contact">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>
+                        Shop No. 5, Near Al Rajwa Restaurant,<br>
+                        Raghuvanshi, Meena Bazar, Bur Dubai,<br>
+                        Dubai, UAE
+                    </p>
+                    <button class="contact-action-btn" data-action="location">Get Directions</button>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+971 52 522 4030<br>Available 24/7</p>
+                    <button class="contact-action-btn" data-action="call">Call Now</button>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>fusionfoodie2025@gmail.com<br>We reply within 2 hours</p>
+                    <button class="contact-action-btn" data-action="email">Send Email</button>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Thu: 11:00 AM - 10:00 PM<br>Fri-Sun: 11:00 AM - 11:00 PM<br>Kitchen closes 30 mins before</p>
+                    <button class="contact-action-btn" data-action="hours">View Schedule</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section-fullwidth">
+        <div class="map-container-fullwidth">
+            <div class="map-overlay">
+                <div class="container">
+                    <div class="map-info-card">
+                        <div class="map-info-header">
+                            <h2>Find Us Here</h2>
+                            <p>Located in the heart of Dubai's vibrant food district</p>
+                        </div>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>
+                                        <a class="link-plain" href="https://maps.app.goo.gl/GifPZvav2oJnkpbh7" target="_blank" rel="noopener">Shop No. 5, Near Al Rajwa Restaurant, Raghuvanshi, Meena Bazar, Bur Dubai, Dubai, UAE</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i class="fas fa-directions"></i>
+                                <div>
+                                    <h4>Directions</h4>
+                                    <p>Near Dubai Marina Mall<br>Valet parking available</p>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i class="fas fa-subway"></i>
+                                <div>
+                                    <h4>Public Transport</h4>
+                                    <p>Dubai Marina Metro Station<br>5 minutes walk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-actions">
+                            <button class="map-btn primary" onclick="openDirections()">
+                                <i class="fas fa-route"></i>
+                                Get Directions
+                            </button>
+                            <button class="map-btn secondary" onclick="callRestaurant()">
+                                <i class="fas fa-phone"></i>
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interactive-map-fullwidth" id="restaurant-map-full">
+                <!-- This will be replaced with actual map integration -->
+                <iframe 
+                    src="https://www.google.com/maps?q=Shop%20No.%205%2C%20Near%20Al%20Rajwa%20Restaurant%2C%20Raghuvanshi%2C%20Meena%20Bazar%2C%20Bur%20Dubai%2C%20Dubai%2C%20UAE&output=embed"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-marker">
+                    <div class="marker-pulse"></div>
+                    <div class="marker-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="form-content">
+                <div class="form-intro" data-aos="fade-right">
+                    <h2>Share Your Feedback</h2>
+                    <p>We value your opinion! Share your dining experience, suggestions, or any feedback to help us serve you better. Your thoughts matter to us.</p>
+                    
+                    <div class="form-features">
+                        <div class="feature-item">
+                            <i class="fas fa-reply"></i>
+                            <span>Quick Response (Within 2 hours)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Rate Your Experience</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Help Us Improve</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="form-icon"><i class="fas fa-phone"></i></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Feedback Type</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select feedback type</option>
+                                <option value="food-quality">Food Quality</option>
+                                <option value="service">Service Experience</option>
+                                <option value="ambiance">Restaurant Ambiance</option>
+                                <option value="suggestion">Suggestions for Improvement</option>
+                                <option value="compliment">Compliments & Praise</option>
+                                <option value="complaint">Complaint or Issue</option>
+                                <option value="general">General Feedback</option>
+                            </select>
+                            <span class="form-icon"><i class="fas fa-list"></i></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Feedback</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your experience, share suggestions, or let us know how we can serve you better..." required></textarea>
+                            <span class="form-icon"><i class="fas fa-comment"></i></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for special offers and updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Submit Feedback</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            <div class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Reviews Section -->
+    <section class="social-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Follow our culinary journey and see what our guests are saying</p>
+            </div>
+            
+            <div class="social-content">
+                <div class="social-feed">
+                    <div class="social-card instagram" data-aos="zoom-in">
+                        <div class="social-header">
+                            <i class="fab fa-instagram"></i>
+                            <span>@fusionfoodie8</span>
+                        </div>
+                        <div class="social-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Instagram Post">
+                        </div>
+                        <div class="social-content-text">
+                            <p>Fresh ingredients, bold flavors! #FusionFoodie</p>
+                            <div class="social-stats">
+                                <span><i class="fas fa-heart"></i> 1.2k</span>
+                                <span><i class="fas fa-comment"></i> 89</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-card facebook" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="social-header">
+                            <i class="fab fa-facebook"></i>
+                            <span>Fusion Foodie</span>
+                        </div>
+                        <div class="social-content-text">
+                            <p> Special Weekend Menu now available! Come experience our chef's latest creations featuring authentic spices and modern techniques.</p>
+                            <div class="social-stats">
+                                <span><i class="fas fa-thumbs-up"></i> 456</span>
+                                <span><i class="fas fa-share"></i> 23</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="reviews-section">
+                    <h3>What Our Guests Say</h3>
+                    <div class="review-carousel">
+                        <div class="review-card active">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Absolutely incredible dining experience! The fusion of flavors is unlike anything I've tasted before."</p>
+                            <div class="reviewer">
+                                <strong>Priya Sharma</strong>
+                                <span>Google Reviews</span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Perfect ambiance, exceptional service, and food that tells a story. Highly recommended!"</p>
+                            <div class="reviewer">
+                                <strong>Rajesh Kumar</strong>
+                                <span>Zomato</span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The chef's creativity shines through every dish. A must-visit for food enthusiasts!"</p>
+                            <div class="reviewer">
+                                <strong>Anita Desai</strong>
+                                <span>TripAdvisor</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-navigation">
+                        <button class="review-nav-btn prev" id="prev-review">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="review-dots">
+                            <span class="dot active" data-review="0"></span>
+                            <span class="dot" data-review="1"></span>
+                            <span class="dot" data-review="2"></span>
+                        </div>
+                        <button class="review-nav-btn next" id="next-review">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fusion Foodie</h3>
+                    <p>Where culinary creativity meets exceptional taste</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#featured">Featured</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fusionfoodie8/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Shop No. 5, Near Al Rajwa Restaurant, Raghuvanshi, Meena Bazar, Bur Dubai, Dubai, UAE</p>
+                    <p><i class="fas fa-phone"></i> +971 52 522 4030</p>
+                    <p><i class="fas fa-envelope"></i> fusionfoodie2025@gmail.com</p>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fusion Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="elegant-script.js"></script>
+    <script src="contact-page.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile nav toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+
+        // Map interaction functions
+        function openDirections() {
+            window.open('https://maps.app.goo.gl/GifPZvav2oJnkpbh7', '_blank');
+        }
+
+        function callRestaurant() {
+            window.location.href = 'tel:+971525224030';
+        }
+    </script>
+
+            <!-- ...existing code... -->
+        <script>
+            // Mobile nav toggle
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('nav-toggle');
+                const navMenu = document.getElementById('nav-menu');
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', function() {
+                        navMenu.classList.toggle('active');
+                    });
+                }
+            });
+        </script>
+        <!-- ...existing code... -->
+</body>
+</html>
