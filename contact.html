@@ -32,9 +32,6 @@
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body itemscope itemtype="https://schema.org/ContactPage">
     <script type="application/ld+json">
@@ -83,10 +80,10 @@
         <div class="container">
             <div class="info-left">
                 <div class="delivery-partners">
-                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
-                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
-                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
-                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="info-right">
@@ -99,7 +96,7 @@
     </div>
 
     <!-- Elegant Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html" class="brand-link">
@@ -192,7 +189,7 @@
     </section>
 
     <!-- Interactive Map Section -->
-    <section class="map-section-fullwidth">
+    <section class="map-section-fullwidth" aria-label="Restaurant location map">
         <div class="map-container-fullwidth">
             <div class="map-overlay">
                 <div class="container">
@@ -248,6 +245,8 @@
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
+                    decoding="async"
+                    title="Map showing Fusion Foodie restaurant location in Dubai"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div class="map-marker">
@@ -499,10 +498,10 @@
                 <div class="footer-delivery">
                     <h4>Order Online</h4>
                     <div class="delivery-partners-footer">
-                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
-                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
-                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
-                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -513,53 +512,42 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="elegant-script.js"></script>
-    <script src="contact-page.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="elegant-script.js"></script>
+    <script defer src="contact-page.js"></script>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 100
-        });
-        
-        // Mobile nav toggle
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS only when available
+            if (window.AOS) {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+            }
+
+            // Mobile nav toggle
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
-            navToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Map interaction functions
+            window.openDirections = function() {
+                window.open('https://maps.app.goo.gl/GifPZvav2oJnkpbh7', '_blank');
+            };
+
+            window.callRestaurant = function() {
+                window.location.href = 'tel:+971525224030';
+            };
         });
-
-        // Map interaction functions
-        function openDirections() {
-            window.open('https://maps.app.goo.gl/GifPZvav2oJnkpbh7', '_blank');
-        }
-
-        function callRestaurant() {
-            window.location.href = 'tel:+971525224030';
-        }
     </script>
-
-            <!-- ...existing code... -->
-        <script>
-            // Mobile nav toggle
-            document.addEventListener('DOMContentLoaded', function() {
-                const navToggle = document.getElementById('nav-toggle');
-                const navMenu = document.getElementById('nav-menu');
-                if (navToggle && navMenu) {
-                    navToggle.addEventListener('click', function() {
-                        navMenu.classList.toggle('active');
-                    });
-                }
-            });
-        </script>
-        <!-- ...existing code... -->
 </body>
 </html>

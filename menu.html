@@ -21,7 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body itemscope itemtype="https://schema.org/ItemList">
     <script type="application/ld+json">
@@ -76,10 +75,10 @@
         <div class="container">
             <div class="info-left">
                 <div class="delivery-partners">
-                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
-                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
-                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
-                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="info-right">
@@ -92,7 +91,7 @@
     </div>
 
     <!-- Elegant Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="container">
             <div class="nav-brand">
                 <a href="index.html" class="brand-link">
@@ -128,7 +127,7 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title" data-aos="fade-up">Discover <h1>Indian Vegetarian Fusion Menu in UAE</h1>
+                <h1 class="hero-title" data-aos="fade-up">Discover Indian Vegetarian Fusion Menu in UAE</h1>
                 <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Indulge in a symphony of flavors crafted with passion and served with love</p>
                 <div class="hero-tagline">
                     <span class="tagline-text">From traditional favorites to innovative fusion creations</span>
@@ -793,10 +792,10 @@
                 <div class="footer-delivery">
                     <h4>Order Online</h4>
                     <div class="delivery-partners-footer">
-                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
-                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
-                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
-                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -806,40 +805,29 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="menu-page.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="menu-page.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 100
-        });
-        
-        // Mobile nav toggle
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS only when available
+            if (window.AOS) {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+            }
+
+            // Mobile nav toggle
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
-            navToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
         });
     </script>
-
-            <!-- ...existing code... -->
-        <script>
-            // Mobile nav toggle
-            document.addEventListener('DOMContentLoaded', function() {
-                const navToggle = document.getElementById('nav-toggle');
-                const navMenu = document.getElementById('nav-menu');
-                if (navToggle && navMenu) {
-                    navToggle.addEventListener('click', function() {
-                        navMenu.classList.toggle('active');
-                    });
-                }
-            });
-        </script>
-        <!-- ...existing code... -->
 </body>
 </html>
