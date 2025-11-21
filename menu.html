@@ -169,7 +169,6 @@
         </div>
       </div>
     </section>
-    <script src="menu-page.js"></script>
     <script>
     // All menu data (category, name, image, desc)
     // Deterministic images from local folder (name -> exact image path)
@@ -805,8 +804,9 @@
         </div>
     </footer>
 
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="menu-page.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize AOS only when available
@@ -816,15 +816,6 @@
                     easing: 'ease-in-out',
                     once: true,
                     offset: 100
-                });
-            }
-
-            // Mobile nav toggle
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-            if (navToggle && navMenu) {
-                navToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
                 });
             }
         });
