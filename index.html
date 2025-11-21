@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fusion Foodie - Creative Restaurant Experience</title>
+    <meta name="description" content="Fusion Foodie - Experience the best vegetarian Indian fusion cuisine in UAE. Authentic flavors, modern twists, and 100% plant-based dishes. Order now!">
+    <meta name="keywords" content="vegetarian restaurant, Indian food UAE, fusion cuisine, best veg restaurant, plant-based food, Indian fusion, UAE restaurants, healthy vegetarian food, Dubai, Abu Dhabi, Sharjah">
+    <meta name="author" content="Fusion Foodie">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="AE">
+    <meta name="geo.placename" content="United Arab Emirates">
+    <meta property="og:title" content="Fusion Foodie | Authentic Indian Vegetarian Cuisine in UAE">
+    <meta property="og:description" content="Discover the best vegetarian Indian fusion food in UAE. 100% plant-based, authentic flavors with a modern twist.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="en_AE">
+    <title>Fusion Foodie | Best Indian Vegetarian Restaurant in UAE | Order Online</title>
     
     <!-- Google Fonts - Schoolbell -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
@@ -23,19 +35,41 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/VegetarianRestaurant">
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Fusion Foodie",
+      "servesCuisine": ["Indian", "Vegetarian", "Fusion"],
+      "priceRange": "$$",
+      "menu": "menu.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      "telephone": "+971525224030",
+      "image": "images/logo.png",
+      "hasMenu": "menu.html"
+    }
+    </script>
     <!-- Info Bar -->
     <div class="info-bar">
       <div class="container">
           <div class="info-left">
               <div class="delivery-partners">
-                  <img src="images/Noon.png" alt="noon foods" class="partner-logo">
-                  <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
-                  <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
-                  <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
-              </div>
+                <img src="images/Noon.png" alt="noon foods" class="partner-logo" loading="lazy" decoding="async">
+                <img src="images/Smiles.png" alt="Swiggy" class="partner-logo" loading="lazy" decoding="async">
+                <img src="images/Talabat.png" alt="Talabat" class="partner-logo" loading="lazy" decoding="async">
+                <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo" loading="lazy" decoding="async">
+            </div>
           </div>
           <div class="info-right">
               <div class="phone-number">
@@ -75,23 +109,23 @@
             <div class="hero-carousel">
                 <div class="hero-slide active">
                     <div class="hero-image-overlay"></div>
-                    <img src="images/hero image1.jpg" alt="Signature Fusion Dish" class="hero-bg-image">
+                    <img src="images/hero image1.jpg" alt="Signature Fusion Dish" class="hero-bg-image" fetchpriority="high" decoding="async">
                 </div>
                 <div class="hero-slide">
                     <div class="hero-image-overlay"></div>
-                    <img src="images/hero image 2.jpg" alt="Gourmet Creation" class="hero-bg-image">
+                    <img src="images/hero image 2.jpg" alt="Gourmet Creation" class="hero-bg-image" loading="lazy" decoding="async">
                 </div>
                 <div class="hero-slide">
                     <div class="hero-image-overlay"></div>
-                    <img src="images/Cheese pizza.jpg" alt="Artisan Pizza" class="hero-bg-image">
+                    <img src="images/Cheese pizza.jpg" alt="Artisan Pizza" class="hero-bg-image" loading="lazy" decoding="async">
                 </div>
                 <div class="hero-slide">
                     <div class="hero-image-overlay"></div>
-                    <img src="images/burgers main menu.jpg" alt="Gourmet Burgers" class="hero-bg-image">
+                    <img src="images/burgers main menu.jpg" alt="Gourmet Burgers" class="hero-bg-image" loading="lazy" decoding="async">
                 </div>
                 <div class="hero-slide">
                     <div class="hero-image-overlay"></div>
-                    <img src="images/Noodles.jpg" alt="Asian Fusion" class="hero-bg-image">
+                    <img src="images/Noodles.jpg" alt="Asian Fusion" class="hero-bg-image" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -117,7 +151,7 @@
     <!-- Our Story Section -->
     <section class="story-section" style="padding:60px 0;">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Our Story</h2>
+            <h1 class="section-title" data-aos="fade-up">Best Indian Vegetarian Restaurant in UAE</h1>
             <p class="hero-description" data-aos="fade-up" data-aos-delay="150" style="max-width:900px; margin:10px auto 0; text-align:center;">
                 Born from a love for bold flavors and culinary creativity, Fusion Foodie blends the warmth of Indian street food with global inspirations. We believe in fresh ingredients, handcrafted recipes, and serving smiles in every bite.
             </p>
@@ -166,7 +200,7 @@
                 <!-- Street Fusion Dosa -->
                 <article class="alt-card" data-animate="left">
                     <div class="alt-card-image">
-                        <img src="images/Pav bhaji burst dosa.png" alt="Pav Bhaji Burst Dosa">
+                        <img src="images/Pav bhaji burst dosa.png" alt="Pav Bhaji Burst Dosa" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Street Fusion Dosa</span>
@@ -179,7 +213,7 @@
                 <!-- Cheesy Dosa (reverse) -->
                 <article class="alt-card reverse" data-animate="right">
                     <div class="alt-card-image">
-                        <img src="images/Cheese corn mayo dosa.png" alt="Cheese Corn Mayo Dosa">
+                        <img src="images/Cheese corn mayo dosa.png" alt="Cheese Corn Mayo Dosa" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Cheesy & Loaded</span>
@@ -192,7 +226,7 @@
                 <!-- Pizza Fusion Dosa -->
                 <article class="alt-card" data-animate="left">
                     <div class="alt-card-image">
-                        <img src="images/Paneer tikka pizza dosa.png" alt="Paneer Tikka Pizza Dosa">
+                        <img src="images/Paneer tikka pizza dosa.png" alt="Paneer Tikka Pizza Dosa" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Pizza Fusion</span>
@@ -205,7 +239,7 @@
                 <!-- Indo-Chinese (reverse) -->
                 <article class="alt-card reverse" data-animate="right">
                     <div class="alt-card-image">
-                        <img src="images/Schezwan noodles dosa.png" alt="Schezwan Noodle Dosa">
+                        <img src="images/Schezwan noodles dosa.png" alt="Schezwan Noodle Dosa" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Indo-Chinese</span>
@@ -218,7 +252,7 @@
                 <!-- Global Fusion Pizza -->
                 <article class="alt-card" data-animate="left">
                     <div class="alt-card-image">
-                        <img src="images/Cheese pizza.jpg" alt="Fusion Foodie Signature Pizza">
+                        <img src="images/Cheese pizza.jpg" alt="Fusion Foodie Signature Pizza" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Global Pizza</span>
@@ -231,7 +265,7 @@
                 <!-- Street Starters (reverse) -->
                 <article class="alt-card reverse" data-animate="right">
                     <div class="alt-card-image">
-                        <img src="images/Dry veg manchurian.png" alt="Crispy Chilli Paneer">
+                        <img src="images/Dry veg manchurian.png" alt="Crispy Chilli Paneer" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Street Starters</span>
@@ -244,7 +278,7 @@
                 <!-- Chaat Special -->
                 <article class="alt-card" data-animate="left">
                     <div class="alt-card-image">
-                        <img src="images/Dahi puri delight.jpg" alt="Dahi Puri">
+                        <img src="images/Dahi puri delight.jpg" alt="Dahi Puri" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Chaat Special</span>
@@ -257,7 +291,7 @@
                 <!-- Burgers & Sips (reverse) -->
                 <article class="alt-card reverse" data-animate="right">
                     <div class="alt-card-image">
-                        <img src="images/Veggie burger.jpg" alt="Veggie Burger">
+                        <img src="images/Veggie burger.jpg" alt="Veggie Burger" loading="lazy" decoding="async">
                     </div>
                     <div class="alt-card-content">
                         <span class="alt-card-tag">Burgers</span>
@@ -423,10 +457,10 @@
                 <div class="footer-delivery">
                     <h4>Order Online</h4>
                     <div class="delivery-partners-footer">
-                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
-                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
-                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
-                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -437,22 +471,25 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="elegant-script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="elegant-script.js"></script>
 
     <!-- Initialize AOS -->
     <script>
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 100
-        });
-        
-        // Mobile nav toggle
+        // Initialize AOS after deferred scripts
         document.addEventListener('DOMContentLoaded', function() {
+            if (window.AOS) {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+            }
+            
+            // Mobile nav toggle
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
             navToggle.addEventListener('click', function() {

@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Fusion Foodie</title>
+    <meta name="description" content="Discover the story behind Fusion Foodie - UAE's premier vegetarian Indian fusion restaurant. Learn about our passion for authentic flavors and innovative recipes.">
+    <meta name="keywords" content="about Fusion Foodie, vegetarian restaurant UAE, Indian fusion food, our story, restaurant history, plant-based cuisine, Dubai restaurants, healthy eating, food philosophy">
+    <meta name="author" content="Fusion Foodie">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Our Story | Fusion Foodie - Indian Vegetarian Fusion Cuisine">
+    <meta property="og:description" content="Discover the journey of Fusion Foodie - bringing authentic Indian vegetarian fusion cuisine to UAE with passion and innovation.">
+    <meta property="og:type" content="website">
+    <title>Our Story | Fusion Foodie - Indian Vegetarian Fusion Cuisine in UAE</title>
     
     <!-- Google Fonts - Schoolbell -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
@@ -18,19 +27,45 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/AboutPage">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Fusion Foodie",
+      "description": "UAE's premier vegetarian Indian fusion restaurant offering authentic flavors with a modern twist",
+      "servesCuisine": ["Indian", "Vegetarian", "Fusion"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.2048",
+        "longitude": "55.2708"
+      },
+      "telephone": "+971525224030",
+      "sameAs": [
+        "https://www.facebook.com/fusionfoodie",
+        "https://www.instagram.com/fusionfoodie",
+        "https://www.tripadvisor.com/restaurant/fusionfoodie"
+      ]
+    }
+    </script>
     <!-- Info Bar -->
     <div class="info-bar">
         <div class="container">
             <div class="info-left">
                 <div class="delivery-partners">
-                    <img src="images/Noon.png" alt="noon foods" class="partner-logo">
-                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo">
-                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo">
-                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo">
+                    <img src="images/Noon.png" alt="noon foods" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Smiles.png" alt="Swiggy" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Talabat.png" alt="Talabat" class="partner-logo" loading="lazy" decoding="async">
+                    <img src="images/Careem.jpg" alt="Uber Eats" class="partner-logo" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="info-right">
@@ -79,7 +114,7 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Our Story</h1>
+                <h1 class="hero-title">Our Story: Redefining Indian Vegetarian Cuisine in UAE</h1>
                 <p class="hero-subtitle">Where passion meets flavor, and tradition embraces innovation</p>
                 <div class="hero-tagline">
                     <span class="tagline-accent">Crafting culinary experiences since day one</span>
@@ -176,68 +211,6 @@
         </div>
     </section>
 
-    <!-- Meet Our Team Section -->
-    <section class="meet-team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Meet Our Culinary Artists</h2>
-                <p class="section-subtitle">The passionate souls behind every delicious creation</p>
-            </div>
-            
-            <div class="team-grid">
-                <div class="team-member" data-aos="fade-up">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1583394293214-28a5b0a8b8e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Head Chef">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Chef Arjun Patel</h3>
-                        <p class="member-role">Head Chef & Founder</p>
-                        <p class="member-bio">With 15+ years of culinary expertise, Chef Arjun brings together traditional Indian flavors with international techniques to create our signature fusion dishes.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sous Chef">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Chef Priya Sharma</h3>
-                        <p class="member-role">Sous Chef</p>
-                        <p class="member-bio">Specializing in South Indian cuisine, Chef Priya adds authentic regional flavors to our menu while experimenting with contemporary presentation styles.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Pastry Chef">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <h3>Chef Ravi Kumar</h3>
-                        <p class="member-role">Pastry Chef</p>
-                        <p class="member-bio">Our dessert maestro who creates magical fusion sweets, blending traditional Indian mithai with modern pastry techniques for unforgettable endings.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Our Promise Section -->
     <section class="our-promise">
@@ -267,7 +240,7 @@
                     </div>
                 </div>
                 <div class="promise-image" data-aos="fade-left">
-                    <img src="images/We promise fresh varieties.jpg" alt="Restaurant Interior">
+                    <img src="images/We promise fresh varieties.jpg" alt="Restaurant Interior" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -318,10 +291,10 @@
                 <div class="footer-delivery">
                     <h4>Order Online</h4>
                     <div class="delivery-partners-footer">
-                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer">
-                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer">
-                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer">
-                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer">
+                        <img src="images/Noon.png" alt="noon foods" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Smiles.png" alt="Smiggy" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Talabat.png" alt="Talabat" class="partner-logo-footer" loading="lazy" decoding="async">
+                        <img src="images/Careem.jpg" alt="Careem" class="partner-logo-footer" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -332,44 +305,32 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="elegant-script.js"></script>
-    <script src="about-page.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="elegant-script.js"></script>
+    <script defer src="about-page.js"></script>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 100
-        });
-        
-        // Mobile nav toggle
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS after deferred scripts are loaded
+            if (window.AOS) {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+            }
+
+            // Mobile nav toggle
             const navToggle = document.getElementById('nav-toggle');
             const navMenu = document.getElementById('nav-menu');
-            navToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
         });
     </script>
-
-            <!-- ...existing code... -->
-        <script>
-            // Mobile nav toggle
-            document.addEventListener('DOMContentLoaded', function() {
-                const navToggle = document.getElementById('nav-toggle');
-                const navMenu = document.getElementById('nav-menu');
-                if (navToggle && navMenu) {
-                    navToggle.addEventListener('click', function() {
-                        navMenu.classList.toggle('active');
-                    });
-                }
-            });
-        </script>
-        <!-- ...existing code... -->
 </body>
 </html>

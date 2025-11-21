@@ -148,30 +148,32 @@ $(document).ready(function() {
         }
     );
     
-    // Featured dishes carousel initialization
-    $('.featured-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            },
-            1200: {
-                items: 4
+    // Featured dishes carousel initialization (guarded)
+    if ($ && $.fn && $.fn.owlCarousel && $('.featured-carousel').length) {
+        $('.featured-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
             }
-        }
-    });
+        });
+    }
     
     // Sticky navigation
     $(window).scroll(function() {
