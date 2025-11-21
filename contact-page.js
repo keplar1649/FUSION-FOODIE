@@ -5,10 +5,10 @@ $(document).ready(function() {
     initNavbar();
     initContactCards();
     initMapInteractions();
-    initContactForm();
     initReviewCarousel();
     initScrollAnimations();
     initFloatingElements();
+    initContactForm();
     
     // Show toast notification
     function showToast(message, type = 'success') {
@@ -158,100 +158,80 @@ $(document).ready(function() {
         );
     }
     
-    // Contact form functionality
+    // Contact form functionality with Web3Forms
     function initContactForm() {
-        const $form = $('#contact-form');
-        const $submitBtn = $('.submit-btn');
-        
-        // Form validation
-        function validateForm() {
-            let isValid = true;
-            const requiredFields = $form.find('[required]');
-            
-            requiredFields.each(function() {
-                const $field = $(this);
-                const $group = $field.closest('.form-group');
-                
-                if (!$field.val().trim()) {
-                    $group.addClass('error');
-                    isValid = false;
-                } else {
-                    $group.removeClass('error');
-                }
-            });
-            
-            // Email validation
-            const email = $('#email').val();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (email && !emailRegex.test(email)) {
-                $('#email').closest('.form-group').addClass('error');
-                isValid = false;
-            }
-            
-            return isValid;
-        }
-        
-        // Real-time validation
-        $form.find('input, select, textarea').on('blur', function() {
-            const $field = $(this);
-            const $group = $field.closest('.form-group');
-            
-            if ($field.prop('required') && !$field.val().trim()) {
-                $group.addClass('error');
-            } else {
-                $group.removeClass('error');
-            }
-        });
-        
-        // Form submission
-        $form.submit(function(e) {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnTextSpan = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+        const resultEl = document.getElementById('result');
+
+        form.addEventListener('submit', async function(e) {
             e.preventDefault();
-            
-            if (!validateForm()) {
-                showToast('Please fill in all required fields correctly.', 'error');
+
+            if (!submitBtn) {
                 return;
             }
-            
-            // Show loading state
-            $submitBtn.addClass('loading').prop('disabled', true);
-            
-            // Simulate form submission
-            setTimeout(() => {
-                $submitBtn.removeClass('loading').prop('disabled', false);
-                
-                // Success animation
-                $submitBtn.addClass('success');
-                showToast('Message sent successfully! We\'ll get back to you within 2 hours.', 'success');
-                
-                // Reset form
-                setTimeout(() => {
-                    $form[0].reset();
-                    $submitBtn.removeClass('success');
-                    $('.form-group').removeClass('error');
-                }, 2000);
-                
-            }, 2000);
-        });
-        
-        // Form field focus effects
-        $('.form-group input, .form-group select, .form-group textarea').focus(function() {
-            $(this).closest('.form-group').addClass('focused');
-        }).blur(function() {
-            $(this).closest('.form-group').removeClass('focused');
-        });
-        
-        // Custom checkbox interaction
-        $('.checkbox-label').click(function() {
-            const $checkbox = $(this).find('input[type="checkbox"]');
-            const $checkmark = $(this).find('.checkmark');
-            
-            setTimeout(() => {
-                if ($checkbox.is(':checked')) {
-                    $checkmark.addClass('checked');
+
+            const originalBtnText = btnTextSpan ? btnTextSpan.textContent : submitBtn.textContent;
+
+            // Reset previous state
+            if (resultEl) {
+                resultEl.textContent = '';
+                resultEl.style.color = '';
+            }
+            submitBtn.disabled = true;
+            submitBtn.classList.add('loading');
+            if (btnTextSpan) {
+                btnTextSpan.textContent = 'Sending...';
+            } else {
+                submitBtn.textContent = 'Sending...';
+            }
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action || 'https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    if (resultEl) {
+                        resultEl.textContent = 'Success! Your message has been sent.';
+                        resultEl.style.color = '#27ae60';
+                    } else {
+                        alert('Success! Your message has been sent.');
+                    }
+                    form.reset();
                 } else {
-                    $checkmark.removeClass('checked');
+                    const errorMessage = data && data.message ? data.message : 'Something went wrong. Please try again.';
+                    if (resultEl) {
+                        resultEl.textContent = 'Error: ' + errorMessage;
+                        resultEl.style.color = '#e74c3c';
+                    } else {
+                        alert('Error: ' + errorMessage);
+                    }
                 }
-            }, 50);
+            } catch (error) {
+                if (resultEl) {
+                    resultEl.textContent = 'Something went wrong. Please try again.';
+                    resultEl.style.color = '#e74c3c';
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+                if (btnTextSpan) {
+                    btnTextSpan.textContent = originalBtnText;
+                } else {
+                    submitBtn.textContent = originalBtnText;
+                }
+            }
         });
     }
     

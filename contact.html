@@ -282,7 +282,8 @@
                 </div>
                 
                 <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="27faa044-d137-4a80-8512-11dae53394cd">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name</label>
@@ -345,6 +346,8 @@
                                 <i class="fas fa-spinner fa-spin"></i>
                             </div>
                         </button>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+                        <div id="result" aria-live="polite" style="margin-top:10px; font-size:0.95rem;"></div>
                     </form>
                 </div>
             </div>
